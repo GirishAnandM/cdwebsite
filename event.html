@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8"> <![endif]-->
+<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--><html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Carpediem 2015 - {{event['name']}}</title>
+        <meta name="description" content="Geass is premium and creative multipurpose onepage template">
+        <meta name="author" content="Eon">
+
+        <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/fonts.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+
+        <!-- Favicon and Apple Icons -->
+        <link rel="shortcut icon" href="../images/favicon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="../images/faviconx57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../images/faviconx72.png">
+
+        <!--- jQuery -->
+        <script src="../js/jquery-1.11.1.min.js"></script>
+
+        <!-- Queryloader -->
+        <script src="../js/queryloader2.min.js"></script>
+
+        <!-- Modernizr -->
+        <script src="../js/modernizr.js"></script>
+	    
+    <script type="text/javascript" src="http://223.224.131.144/scripts/Anchor.js"></script>
+</head>
+    <body>
+        <div class="geass-loader-overlay left"></div><!-- End .geass-loader-overlay left -->
+        <div class="geass-loader-overlay right"></div><!-- End .geass-loader-overlay right -->
+        <div id="wrapper">
+            <!-- Header / Menu Section -->
+            <header id="header" class="transparent">
+                <nav class="navbar navbar-default navbar-transparent" role="navigation">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand navbar-brand-img" href="/"><img src="../images/logo-white.png" class="img-responsive logo-white" alt="logo"><img src="../images/logo-white.png" class="img-responsive logo-fixed" alt="logo"></a>
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-right" id="main-menu">
+                            <ul class="nav navbar-nav">
+                                <li><a href="/#home">Home</a></li>
+                                <li><a href="/#aboutus">About</a></li>
+                                <li><a href="/#services">Services</a></li>
+                                <li><a href="/#portfolio">Portfolio</a></li>
+                                <li><a href="/#blog">Blog</a></li>
+                                <li class="dropdown">
+                                    <a href="#pages" class="dropdown-toggle" data-toggle="dropdown"><span class="sm-separator">Pages</span><i class="fa fa-angle-down"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="blog.html">Blog Page</a></li>
+                                        <li><a href="blog-timeline.html">Blog Timeline</a></li>
+                                        <li class="active"><a href="single.html">Blog Post Page</a></li>
+                                        <li><a href="elements/elements.html">Elements Page</a></li>
+                                        <li><a href="pricing.html">Pricing Tables</a></li>
+                                        <li><a href="404.html">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/#contactus">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container-fluid -->
+                </nav>
+            </header>
+            <div class="page-header parallax" style="background-image:url(../images/headers/{{event['domain']}}.jpg)" data-stellar-background-ratio="0.4">
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 page-header-wrapper">
+                            <h1 class="page-title">{{event['name']}}</h1>
+                        </div><!-- End .col-md-12 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+            </div>
+
+            <div class="md-margin2x"></div><!-- space -->
+
+            <section id="content" role="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="breadcrumb-container clearfix">
+                                <ol class="breadcrumb pull-left">
+                                    <li><a href="/" title="Go to Homepage">Home</a></li>
+                                    <li><a href="/events" title="Blog">Events</a></li>
+                                    <li class="active">{{event['name']}}</li>
+                                </ol>
+                            </div><!-- End .breadcrumb-container -->
+                        </div><!-- End .col-md-12 -->
+                    </div><!-- End .row -->
+                    
+                    <div class="xlg-margin"></div><!-- space -->
+
+                    <div class="row">
+                        <div class="col-md-12 single">
+                            <div class="article">
+                                <div class="article-meta-container">
+                                    <h1>{{event['name']}}</h1>
+                                    <h3>Event Details</h3>
+                                    <p><b>Date: </b>{{event['date']}} </p>
+                                    <p><b>Prize: </b>{{event['prize']}}</p>
+                                    <p><b>Venue: </b>{{event['venue']}}</p>
+                                    <p><b>Time: </b>{{event['time']}}</p>
+                                    <p><b>Duration: </b>{{event['duration']}}</p>
+                                    {% if event['domain']!='hackmania'%}
+                                    <p><b>Judge: </b>{{event['judge']}}</p>
+                                    {% endif %}
+                                    <p><b>Categories: </b>{{event['categories']}}</p>
+                                    <p><b>Contact: </b>{{event['contact']}}</p>
+                                    <p><b>Registration: </b>{{event['registration']}}</p>
+                                    <div class="article-meta clearfix">
+                                        
+                                        
+                                    </div><!-- End .article-meta -->
+                                </div><!-- End .article-meta-container -->
+                                
+                            </div><!-- End .article -->
+                            {% if event['domain']=='hackmania' %}
+                            <div class="article-author">
+
+                                <figure><img width=100 style="border-radius:50%" src="http://hackmania.in/CBIT/img/rajat.png" alt="Author"></figure>
+                                <h4><a href="#">Rajat Shahi</a></h4>
+                                <p>Organiser | <a target="_blank" href="http://hackmania.in/CBIT/">Hackmania</a></p>
+
+                                <ul class="social-icons-container small-icons">
+                                    <li><a href="https://www.facebook.com/rajat.shahi" class="facebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                </ul>
+                            </div><!-- End .article-author -->
+                            
+                            <div class="article-author">
+                            
+                            {% for person in event['judge']%}
+                            
+                                <div class="row">
+                                <figure><img width=100 style="border-radius:50%" src="{{event['judge'][person]}}" alt="Author"></figure>
+                                <h4><a href="#">{{person}}</a></h4>
+                                <p>Judge</p>
+                            </div><!-- End .article-author -->
+                        
+                            {% endfor%}
+                            
+                            </div>
+                            {% endif%}
+
+                             <div class="md-margin2x visible-sm visible-xs"></div><!-- space -->
+                        </div><!-- End .col-md-8 -->
+                        
+                        
+                    </div><!-- End .row -->
+                </div><!-- End .container -->
+
+                <div class="md-margin"></div><!-- space -->
+            </section><!-- End #content -->
+
+            <footer id="footer" class="section-bg parallax-fixed">
+                <div class="section-overlay darkbg"></div><!-- End .section-overlay -->
+                <div class="section-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="index.html" class="footer-logo" title="Carpediem CBIT"><img src="images/logo-white.png" width="300" height="75" alt="Carpediem Logo"></a>
+                            </div><!-- End .col-md-12 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+
+                    <div class="footer-social-icons transparent">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <ul class="social-icons-container">
+                                        <li><a target="_blank" href="https://facebook.com/carpediemcbit" class="facebook add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Facebook"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a target="_blank" href="https://twitter.com/carpediematcbit" class="twitter add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Twitter"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a target="_blank" href="https://plus.google.com/104773815381626551301/" class="googleplus add-tooltip" data-placement="top" data-toggle="tooltip" title="Follow us on Google +"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a target="_blank" href="http://carpediemcbit.tumblr.com/" class="tumblr add-tooltip" data-placement="top" data-toggle="tooltip" title="Find us at Tumblr"><i class="fa fa-tumblr"></i></a></li>
+                                    </ul>
+                                </div><!-- End .col-md-12 -->
+                            </div><!-- End .row -->
+                        </div><!-- End .container -->
+                    </div><!-- End .footer-social-icons -->
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>All rights reserved &copy;Chaitanya Smruti
+                                    </p>
+                                <p><span>2015</span></p>
+                                Website developed by Nagarjun Redla
+                            </div><!-- End .col-md-12 -->
+                        </div><!-- End .row -->
+                    </div><!-- End .container -->
+                </div><!-- End .section-content -->
+            </footer>
+        </div><!-- End #wrapper -->
+
+        <!-- scroltop -->
+        <a href="#home" id="scroll-top" class="add-tooltip" data-placement="top" title="Go to top"><i class="fa fa-angle-double-up"></i></a>
+
+        <!-- Plugins -->
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/plugins.js"></script>
+        <script src="../js/main.js"></script>
+
+    </body>
+</html>

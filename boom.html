@@ -1,0 +1,5 @@
+<html>
+{% for event in events %}
+<a href="/{{events[event]['domain']}}">{{events[event]['name']}}</a><br>
+{% endfor %}
+</html>

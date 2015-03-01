@@ -1,0 +1,43 @@
+[
+
+  {
+    "uid": 4,
+    "text" : "hey i have found this awesome tool called polymer to design my websites for sharing my knowledge and which also has interactions which can be cotrolled by me from this wheel chair.",
+    "username" : "stephen hawking",
+    "nickname":"HACKing",
+    "avatar" : "../img/avatar-01.svg",
+    "favorite": false
+  },
+  {
+    "uid": 5,
+    "text" : "how about buying the polymer from google. I have done that if they have come up with this before my death",
+    "username" : "steve jobs",
+    "nickname":"steve JOBless",
+    "avatar" : "../img/avatar-02.svg",
+    "favorite": false
+  },
+  {
+    "uid": 6,
+    "text" : "polymium",
+    "username" : "madam curie",
+    "nickname":"cureee",
+    "avatar" : "../img/avatar-03.svg",
+    "favorite": false
+  },
+  {
+    "uid": 7,
+    "text" : "polymer is awesome",
+    "username" : "Zelda",
+    "nickname":"zee",
+    "avatar" : "../img/avatar-06.svg",
+    "favorite": false
+  },
+  {
+    "uid": 8,
+    "text" : "polymer!!!",
+    "username" : "Norbert",
+    "nickname":"orbit",
+    "avatar" : "../img/avatar-05.svg",
+    "favorite": false
+  }
+]
